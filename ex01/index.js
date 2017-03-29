@@ -17,7 +17,7 @@ Une fois l’exercice résolu, vous exécuterez la commande tar -cf testDay00.ta
 `;
 
 exports.verify = (args, cb) => {
-	let exec = require('child_process').spawn('ls ' + argv[0]);
+	let exec = require('child_process').spawn('ls ', [ argv[0] ]);
 
 	exec.stdout.on('data', (data) => {
 		console.log(`stdout: ${data}`);
