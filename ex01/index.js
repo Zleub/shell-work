@@ -8,7 +8,7 @@ Files to submit : testDay00.tar
 Créer le fichier testDay00 dans votre répertoire de rendu.
 Vous devrez faire en sorte que (à part "total 1") :
 
-    $> ls -l
+    $> ls -l testDay00
     total 1
     -r--r-xr-x 1 login wheel 40 Jun 1 23:42 testDay00
 
