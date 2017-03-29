@@ -1,3 +1,5 @@
+"use strict";
+
 exports.problem = `
 Exercice 01: File Attributes
 

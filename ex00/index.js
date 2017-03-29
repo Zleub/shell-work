@@ -1,3 +1,5 @@
+"use strict";
+
 exports.problem = `
 Exercice 00: Verify your work
 
