@@ -15,7 +15,7 @@ testDay00 pour créer le fichier à rendre.
 `;
 
 exports.verify = (args, cb) => {
-	let exec = require('child_process').spawn('echo test');
+	let exec = require('child_process').spawn;
 
 	exec.stdout.on('data', (data) => {
 		console.log('stdout: ' + data);
