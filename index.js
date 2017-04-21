@@ -22,32 +22,26 @@
 //
 // shop.execute(process.argv.slice(2));
 
+console.log( process.cwd() )
+console.log( require('fs').readdirSync('./') )
+
 var jsing = require('workshopper-adventure')({
-    appDir: __dirname,
-    languages: ['en'],
-    header: require('workshopper-adventure/default/header')
-  // , footer: require('./lib/footer.js')
+	appDir: __dirname,
+	languages: ['en'],
+	header: require('workshopper-adventure/default/header'),
+	footer: require('./lib/footer')
 });
 
-jsing.addAll([
-	{
-		name: 'test',
+jsing.addAll(require('./menu.json').map(function (problem) {
+	console.log('problem: ', problem)
+	return {
+		name: problem,
 		fn: function () {
-			var p = 'test'.toLowerCase().replace(/\s/g, '-');
+			var p = problem.toLowerCase().replace(/\s/g, '-');
 			var dir = require('path').join(__dirname, 'problems', p);
 			return require(dir);
 		}
 	}
-])
-// jsing.addAll(require('./menu.json').map(function (problem) {
-//   return {
-//     name: problem,
-//     fn: function () {
-//       var p = problem.toLowerCase().replace(/\s/g, '-');
-//       var dir = require('path').join(__dirname, 'problems', p);
-//       return require(dir);
-//     }
-//   }
-// }))
+}))
 
-module.exports = jsing;
+jsing.execute(process.argv.slice(2))
