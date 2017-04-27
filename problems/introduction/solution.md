@@ -1,0 +1,1 @@
+`shell-work verify`

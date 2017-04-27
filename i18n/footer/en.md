@@ -1,0 +1,3 @@
+- To print these instructions again, run: `{appname} print`
+- To verify your program, run: `{appname} verify <your-url>`
+- For help run: `{appname} help`
