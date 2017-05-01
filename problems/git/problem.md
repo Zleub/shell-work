@@ -19,4 +19,4 @@ This repository will be the root folder for your work from now on. Each exercice
 
 You will validate your solution with \`shell-work verify <your-repository-url>\`.
 
-The "commit", "Author" and "Date" lines won't be taken into account.
+{bold}{yellow}The "commit", "Author" and "Date" lines won't be taken into account.{/yellow}{/bold}

@@ -17,4 +17,4 @@ $> ls -l testDay00
 Once the exercice done, you will run `tar -cf testDay00.tar testDay00` to create the file to submit.
 You can validate your solution with `shell-work verify <your-url>`.
 
-"login" et "wheel" will be respectively replaced by your name and group.
+{bold}{yellow}"login" et "wheel" will be respectively replaced by your name and group.{/yellow}{/bold}

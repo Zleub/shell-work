@@ -21,6 +21,8 @@ Create those files and directories. Make sure that the display of an ls -l in yo
 Once your exercice complete, you will run \`tar -cf exo2.tar test*\` to create the file to submit.
 You can validate your solution with \`shell-work verify <your-file>\`.
 
-"login" et "wheel" will be respectively replaced by your name and group.
-You wont be able to mimic the ligne "total 42".
-The XX wont be taken into account
+{bold}{yellow}"login" et "wheel" will be respectively replaced by your name and group.{/yellow}{/bold}
+
+{bold}{yellow}You wont be able to mimic the ligne "total 42".{/yellow}{/bold}
+
+{bold}{yellow}The XX wont be taken into account{/yellow}{/bold}
