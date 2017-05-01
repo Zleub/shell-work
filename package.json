@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Zleub/shell-work/issues"
   },
-  "homepage": "https://github.com/Zleub/shell-work#readme"
+  "homepage": "https://github.com/Zleub/shell-work#readme",
+  "dependencies": {
+    "workshopper-adventure": "^6.0.2"
+  }
 }
